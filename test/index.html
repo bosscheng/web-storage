@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="../storage.js"></script>
+<script>
+    storage.setItem('a',3);
+    console.log(storage.getItem('a'));
+
+    setTimeout(function () {
+        storage.removeItem('a');
+    },10000)
+
+</script>
+</body>
+</html>
